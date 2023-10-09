@@ -1,0 +1,197 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+body{
+    background-color: #D6BA97;
+}
+/*
+.bottom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+*/
+
+nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    height: 80px; 
+    padding: 0 30px
+}
+
+.smalllogo img {
+    height: 55px; 
+}
+
+.links {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.links li {
+    margin-right: 10px;
+
+}
+
+
+.links li a {
+    display: inline-block;
+    font-family: 'Avenir', sans-serif;
+    padding: 10px 20px; /* Set the padding of each link */
+    border-radius: 20px; /* Add rounded corners to each link */
+    background-color: #98C365; /* Set the background color of the links */
+    color: #FAFAFA; /* Set the color of the links */
+    text-decoration: none; /* Remove the underline from the links */
+    transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+}
+
+.links li a:hover {
+    background-color: #74AC32; /* Change the background color of the link on hover */
+  }
+
+
+.current{
+    position: relative;
+    top: 30px;
+    text-align: left;
+    font-size: 40;
+    color: #593112;
+    margin: 50px;
+}
+.ctask{
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
+    width: 550px;
+
+    border-radius: 50px;
+    background-color: #FEF1DA;
+}
+
+
+/*
+.current li{
+    display: inline-flex;
+    padding: 10px 5px;
+}
+*/
+
+ul {
+    list-style-type: none;
+  }
+
+.upcoming{
+    position: relative;
+    top: 30px;
+    text-align: left;
+    font-size: 40;
+    color: #593112;
+    margin: 50px;
+}
+
+.utask{
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    padding-left: 80px;
+    
+    width: 550px;
+
+    border-radius: 50px;
+    background-color: #FEF1DA;
+}
+
+
+.floor{
+    background-color: #351207;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 80px;
+    padding-bottom: 20px;
+    
+    left: 0;
+}
+
+/*
+.winstil{
+    background-color: #68462D;
+    
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    width: 450px;
+    
+    margin-left: 850px;
+    margin-top: -20px;
+}
+
+
+.winbord{
+    border-style: solid;
+    border-color: #2D1106;
+    border-width: 3px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 550px;
+
+    width: 448px;
+
+    margin-left: 850px;
+    margin-top: -575px;
+}
+*/
+
+.window{
+    margin-left: 400px;
+    margin-top: -800px;
+}
+/*
+.clouds{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+
+    margin-top: 10px;
+    margin-left: 500px;
+
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-delay: 0s;
+
+    animation: moving 15s linear infinite ;
+    animation-iteration-count:infinite;
+}
+
+@keyframes moving {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 20px;
+    }
+    50%{
+        left: 30px;
+    }
+    75%{
+        left: 40px;
+    }
+    100%{
+        left: 50px;
+    
+    }
+}
+*/

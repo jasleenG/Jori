@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+body{
+    background-color: #C4F6F6;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.mindmap1{
+    margin-top: 10px;
+    margin-left: 300px;
+
+    border-radius: 2px;
+    max-width: 5px;
+    height: auto;
+    position: absolute;
+}
+
+.journal{
+    margin-top: 10px;
+    margin-left: 300px;
+
+    border-radius: 2px;
+    max-width: 5px;
+    height: auto;
+    position: relative;
+}
+
+
+
+nav {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  height: 80px; 
+  padding: 0 30px
+}
+
+.smalllogo img {
+  height: 55px; 
+}
+
+.links {
+  display: flex; 
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-right: 10px;
+}
+
+.links li a {
+  display: inline-block;
+  font-family: 'Avenir', sans-serif;
+  padding: 10px 20px; /* Set the padding of each link */
+  border-radius: 20px; /* Add rounded corners to each link */
+  background-color: #98C365; /* Set the background color of the links */
+  color: #FAFAFA; /* Set the color of the links */
+  text-decoration: none; /* Remove the underline from the links */
+  transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+}
+
+.links li a:hover {
+  background-color: #74AC32; /* Change the background color of the link on hover */
+}

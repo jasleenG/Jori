@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jori</title>
+</head>
+<link rel="stylesheet" href="a-login.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <!-- uploads bungee font from google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Avenir:400,700&display=swap" rel="stylesheet"> <!--uploads avenir font -->
+<body>
+	<header>
+		<nav> 
+            <div class="smalllogo">
+                <a href="a-landing.html"><img src="logo.png" alt="Jori"></a>
+            </div>
+        
+            <ul class="links">
+                <li><a href="a-landing.html">Home</a></li>
+                <li><a href="a-about.html">About</a></li>
+                <li><a href="a-login.html">Login</a></li>
+            </ul>
+        </nav>
+	</header>
+
+    <main>
+            <style>
+                body {
+                  font-family: Arial, sans-serif;
+                }
+          
+                .container {
+                  max-width: 400px;
+                  margin: 0 auto;
+                  padding: 20px;
+                  background-color: white;
+                  border-radius: 20px;
+                }
+          
+                .container h2 {
+                  text-align: center;
+                }
+          
+                .container form {
+                  display: flex;
+                  flex-direction: column;
+                }
+          
+                .container label,
+                .container input {
+                  margin-bottom: 10px;
+                }
+          
+                .container input[type="email"],
+                .container input[type="password"],
+                .container input[type="submit"] {
+                  padding: 10px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                }
+          
+                .container input[type="submit"] {
+                  background-color: #74AC32;
+                  color: white;
+                  cursor: pointer;
+                }
+          
+                .container input[type="submit"]:hover {
+                  background-color: #537C2D;
+                }
+              </style>
+            </head>
+            <body>
+                <br></br><br></br><br></br>
+
+              <div class="container">
+                <img src="logo.png" style="width:200px;">
+                <form id="loginForm">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" required>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              <br></br><br></br><br></br>
+          
+              <script>
+                var loginForm = document.getElementById("loginForm");
+                loginForm.addEventListener("submit", function(event) {
+                  event.preventDefault();
+          
+                  var email = document.getElementById("email").value;
+                  var password = document.getElementById("password").value;
+          
+                  // You can perform any necessary validation or processing here
+          
+                  // Navigate to the next page
+                  window.location.href = "a-todo.html";
+                });
+              </script>
+
+            
+     
+
+        
+        
+
+         
+        
+        
+        <footer>
+            <a href="#">Follow Us</a>
+            <a href="a-about.html">About The Team</a>
+            <a href="a-login.html">Sign Up</a>
+        </footer>
+
+          
+    </main>
+</body>

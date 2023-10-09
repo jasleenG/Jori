@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+body{
+    background-color: #C4F6F6;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.bear{
+    margin-top: 100px;
+    margin-left: 75px;
+
+    border-radius: 30px;
+    max-width: 1500px;
+    height: auto;
+}

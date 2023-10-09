@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <link href="profile.css" rel="stylesheet" type="text/css" />
+    <body>
+        <nav> 
+            <div class="smalllogo">
+                <a href="a-landing.html"><img src="logo.png" alt="Jori"></a>
+            </div>
+            
+            <ul class="links">
+                <li><a href="a-todo.html">Workspace</a></li>
+                <li><a href="a-calendar.html">Calendar</a></li>
+                <li><a href="mhpage.html">Mental Health</a></li>
+                <li><a href="a-profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>
+                <img class="mypro" src="mypro.png"> 
+
+                <h6 style = "color:#8CC556"></h6>
+
+                <img class="accdet" src="accdet.png">
+                 
+                <img class="badges" src="badges.png">
+                <img class="goals" src="goals.png">
+
+               <!-- <div class="badgebox"> </div> -->
+                <style type="text/css">
+                    body{
+                        background: #C4F6F6;
+                        color: #333;
+                        font: tahoma;
+                        height: 100vh;
+                        margin: 0;
+                        padding: 0;
+                        overflow-x: hidden;
+                    }
+
+                    #background-wrap{
+                        bottom: 0;
+                        left: 0;
+                        padding-top: 50px;
+                        position: fixed;
+                        right: 0;
+                        top: 0;
+                        z-index: -1;
+                    }
+                    @keyframes animateCloud{
+                        0%{margin-left: -1000px;}
+                        100%{margin-left: 100%;}
+                    }
+
+                    .x1{
+                        animation: animateCloud 35s linear infinite;
+                        transform: scale(0.65);
+                    }
+
+                    .x2{
+                        animation: animateCloud 20s linear infinite;
+                        transform: scale(0.3);
+                    }
+
+                    .x3{
+                        animation: animateCloud 30s linear infinite;
+                        transform: scale(0.5);
+                    }
+
+                    .x4{
+                        animation: animateCloud 18s linear infinite;
+                        transform: scale(0.4);
+                    }
+
+                    .x5{
+                        animation: animateCloud 25s linear infinite;
+                        transform: scale(0.55);
+                    }
+
+
+                    .cloud{
+                        background: white;
+                        background: linear-gradient(top, white, 5%, #f1f1f1 100%);
+                        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#f1f1f1', GradientType=0);
+                        border-radius: 100px;
+                        box-shadow: 0 8px 5px rgba(0, 0, 0);
+                        height: 120px;
+                        position: relative;
+                        width: 350px;
+                    }
+
+                    .cloud:after, .cloud:before {
+                        background: white;
+                        content:"";
+                        position: absolute;
+                    }
+
+                    .cloud:after{
+                        border-radius: 30px;
+                        height: 50px;
+                        left: 50px;
+                        top: 50px;
+                        width: 50px;
+                    }
+
+                    .cloud:before{
+                        border-radius: 200px;
+                        height: 180px;
+                        width: 180px;
+                        right: 50px;
+                        top: -90px;
+
+                    }
+
+                    
+                </style>
+
+
+                <div id="background-wrap">
+                    <div class="x1">
+                      <div class ="cloud"></div>
+                    </div>
+  
+                    <div class="x2">
+                      <div class ="cloud"></div>
+                    </div>
+  
+                    <div class="x3">
+                      <div class ="cloud"></div>
+                    </div>
+
+                    <div class="x4">
+                        <div class ="cloud"></div>
+                      </div>
+
+                    <div class="x5">
+                        <div class ="cloud"></div>
+                      </div>
+  
+                  </div>
+
+
+            </li>
+        </ul>
+    </body>
+</html>

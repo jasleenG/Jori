@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestPage</title>
+</head>
+<body>
+    <form id="eventForm">
+        <label for="eventName">Event Name:</label><br>
+        <input type="text" id="eventName" name="eventName"><br>
+        <label for="eventStart">Event Start (YYYYMMDDTHHmmssZ format):</label><br>
+        <input type="text" id="eventStart" name="eventStart"><br>
+        <label for="eventEnd">Event End (YYYYMMDDTHHmmssZ format):</label><br>
+        <input type="text" id="eventEnd" name="eventEnd"><br>
+        <label for="eventLocation">Event Location:</label><br>
+        <input type="text" id="eventLocation" name="eventLocation"><br>
+        <label for="eventDetails">Event Details:</label><br>
+        <input type="text" id="eventDetails" name="eventDetails"><br>
+        <!--<input type="button" value="Create Google Calendar Event" onclick="createGcalLink()">-->
+    </form>
+    
+    <p><a id="gcalLink" href="" target="_blank">Your Google Calendar Event</a></p>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

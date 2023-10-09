@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jori</title>
+</head>
+<link rel="stylesheet" href="a-calendar.css" />
+<script src="index.json"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <!-- uploads bungee font from google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Avenir:400,700&display=swap" rel="stylesheet"> <!--uploads avenir font -->
+<body>
+	<header>
+		<nav> 
+            <div class="smalllogo">
+                <a href="a-landing.html"><img src="logo.png" alt="Jori"></a>
+            </div>
+            
+            <ul class="links">
+                <li><a href="a-todo.html">Workspace</a></li>
+                <li><a href="a-calendar.html">Calendar</a></li>
+                <li><a href="mhpage.html">Mental Health</a></li>
+                <li><a href="a-profile.html">Profile</a></li>
+            </ul>
+        </nav>
+	</header>
+
+    <main>
+        <br></br><br></br>
+        <img src="yourweek.png" style="width:300px">
+        <br></br>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%230B8043&ctz=America%2FLos_Angeles&mode=WEEK&showTitle=0&title&src=amFzbGVlbmd1bnNpQGdtYWlsLmNvbQ&src=Zjl1YThwZGM2OG5xZDhraDlpcTY2NDRib3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=MDFkMDQ4MzBiMzNiM2FjYTRiOGU3OWIxNWI1NmIyMjk3OTZjYTAxNDZmY2Q1ODhkYWRkNjZlZTg1NmY4Yzc2ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NmQ1MWIyN2JkYTZkZWY5ODU4OTBmYjQ2MzEzZmY1ZjEzNjE5NDg1MDFmZTVmNWRiMjllMDIxZmU3OGRhMmQ3N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTAyODc3OTI5NDkzNDkzODc5NTcyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%237CB342&color=%2333B679&color=%237CB342&color=%230B8043&color=%230B8043&color=%23202124" width="600" height="800" frameborder="0" scrolling="no"></iframe>
+        <style>
+            .form-group {
+              margin-bottom: 10px;
+            }
+      
+            .form-group label {
+              display: block;
+              font-weight: bold;
+            }
+      
+            #result {
+              margin-top: 20px;
+            }
+
+            .calendar{
+                display:block; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+          </style>
+        </head>
+        <body>
+          <h1>Add Event to Google Calendar</h1>
+          <div id="eventForm">
+            <div class="form-group">
+              <label for="eventTitle">Event Title:</label>
+              <input type="text" id="eventTitle" required>
+            </div>
+            <div class="form-group">
+              <label for="eventDate">Event Date:</label>
+              <input type="date" id="eventDate" required>
+            </div>
+            <div class="form-group">
+              <label for="eventTime">Event Time:</label>
+              <input type="time" id="eventTime" required>
+            </div>
+            <div class="form-group">
+              <label for="eventDescription">Event Description:</label>
+              <textarea id="eventDescription" rows="3"></textarea>
+            </div>
+            <button id="addEventBtn">Add Event to Calendar</button>
+          </div>
+          <div id="result"></div>
+      
+          <script>
+            function addEventToCalendar() {
+              var eventTitle = document.getElementById("eventTitle").value;
+              var eventDate = document.getElementById("eventDate").value;
+              var eventTime = document.getElementById("eventTime").value;
+              var eventDescription = document.getElementById("eventDescription").value;
+      
+              var eventDateTime = new Date(eventDate + " " + eventTime);
+              var eventStart = eventDateTime.toISOString();
+              var eventEnd = new Date(eventDateTime.getTime() + 60 * 60 * 1000).toISOString(); // Event duration: 1 hour
+      
+              var eventUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent(eventTitle) +
+                "&dates=" + encodeURIComponent(eventStart) + "/" + encodeURIComponent(eventEnd) +
+                "&details=" + encodeURIComponent(eventDescription);
+      
+              var resultDiv = document.getElementById("result");
+              resultDiv.innerHTML = "<a href='" + eventUrl + "' target='_blank'>Event added to Google Calendar</a>";
+            }
+      
+            var addEventButton = document.getElementById("addEventBtn");
+            addEventButton.addEventListener("click", addEventToCalendar);
+          </script>
+       
+     
+
+        
+        
+
+         
+        
+        
+        <footer>
+            <a href="#">Follow Us</a>
+            <a href="a-about.html">About The Team</a>
+            <a href="a-login.html">Sign Up</a>
+        </footer>
+
+          
+    </main>
+</body>
